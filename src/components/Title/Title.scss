@@ -1,0 +1,17 @@
+@import '../../App.scss';
+
+/***** TITLE STYLE *****/
+.section-title {
+  h2 {
+    font-size: clamp(1.5rem, 4.5vw, 3rem);
+    color: $green;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    &::first-letter {
+      color: $red;
+    }
+  }
+}

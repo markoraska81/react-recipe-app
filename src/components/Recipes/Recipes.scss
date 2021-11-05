@@ -1,0 +1,8 @@
+@import '../../App.scss';
+
+/***** RECIPES STYLE *****/
+.recipes-box {
+  @include flexBox(center, initial);
+  gap: 1rem;
+  flex-wrap: wrap;
+}

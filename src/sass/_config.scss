@@ -1,0 +1,78 @@
+/***** CONFIG *****/
+$dark: #141416;
+$gray: #606060;
+$red: #ed1c24;
+$dark-red: #97080e;
+$green: #7aca25;
+
+/***** FONTS *****/
+$urbanist: 'Urbanist', sans-serif;
+$robotoCondensed: 'Roboto Condensed', sans-serif;
+
+/***** TRANSITION *****/
+$ease-in-out: all 0.4s ease-in-out;
+$linear: all 0.4s linear;
+
+/***** SET TEXT COLOR *****/
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return $gray;
+  } @else {
+    @return #fff;
+  }
+}
+
+/***** SET TEXT COLOR BASED ON BACKGROUND *****/
+@mixin set-background($color) {
+  background-color: ($color);
+  color: set-text-color($color);
+  a {
+    color: set-text-color($color);
+  }
+}
+
+/***** FLEXBOX *****/
+@mixin flexBox($content, $align) {
+  display: flex;
+  justify-content: $content;
+  align-items: $align;
+}
+
+/***** WRAPPER *****/
+@mixin wrapper($width, $margin) {
+  width: 100%;
+  max-width: $width;
+  margin: $margin;
+}
+
+/***** CLEARFIX *****/
+@mixin clearFix {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/***** MEDIA QUERY *****/
+@mixin mobile($width: 425px) {
+  @media (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin tablet($width: 768px) {
+  @media (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin laptop($width: 1024px) {
+  @media (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin desktop($width: 1200px) {
+  @media (min-width: $width) {
+    @content;
+  }
+}

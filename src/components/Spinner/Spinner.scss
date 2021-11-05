@@ -1,0 +1,8 @@
+@import '../../App.scss';
+
+/***** SPINNER STYLE *****/
+.spinner {
+  @include wrapper(100px, 0 auto);
+  @include flexBox(center, center);
+  text-align: center;
+}

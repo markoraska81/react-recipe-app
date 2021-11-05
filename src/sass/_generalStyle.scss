@@ -1,0 +1,61 @@
+@import './config';
+
+/***** GENERAL STYLE *****/
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: {
+    image: url(../background.jpg);
+    position: center;
+    repeat: no-repeat;
+    attachment: fixed;
+  }
+  color: set-text-color(#fff);
+  line-height: 1.5;
+  font-size: 1rem;
+  font-family: $robotoCondensed;
+  overflow-x: hidden;
+}
+
+/***** SECTION *****/
+section {
+  padding: 3rem 1rem;
+}
+
+/***** TYPOGRAPHY *****/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/***** IMAGE *****/
+img {
+  display: block;
+  width: 100%;
+  min-width: 100%;
+}
+
+/***** UL *****/
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/***** LINK *****/
+a {
+  text-decoration: none;
+  color: set-text-color(#fff);
+}

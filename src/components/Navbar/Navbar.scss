@@ -1,0 +1,31 @@
+@import '../../App.scss';
+
+/***** NAVBAR STYLE *****/
+.navbar {
+  @include wrapper(1000px, 0 auto);
+  padding: 0.5rem 0;
+
+  // MEDIA QUERY
+  @include tablet {
+    padding: 0;
+  }
+
+  // BRAND
+  &-brand {
+    @include flexBox(space-between, center);
+
+    // LOGO
+    &__logo {
+      display: inline-block;
+      color: $green;
+      font-family: Helvetica;
+      font-size: clamp(1.5rem, 4.5vw, 3rem);
+      text-decoration: none;
+
+      &::first-letter {
+        color: $red;
+        font-weight: bold;
+      }
+    }
+  }
+}

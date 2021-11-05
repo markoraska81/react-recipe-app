@@ -1,0 +1,38 @@
+@import '../../sass/config';
+
+/***** SELECT FORM STYLE *****/
+.food-form {
+  @include flexBox(center, center);
+  flex-direction: column;
+
+  input,
+  select {
+    width: 100%;
+    max-width: 600px;
+    height: 44px;
+    margin-bottom: 15px;
+    padding: 5px 10px;
+    color: #666;
+    font-size: clamp(1rem, 1.5vw, 3rem);
+    -webkit-appearance: none;
+    border: solid 1px #ccc;
+    border-radius: 0;
+    outline: none;
+  }
+
+  select {
+    background: {
+      size: 13px;
+      repeat: no-repeat;
+      position: right 15px center;
+    }
+  }
+
+  option {
+    text-transform: capitalize;
+
+    &::placeholder {
+      text-transform: capitalize;
+    }
+  }
+}

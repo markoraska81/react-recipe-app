@@ -1,0 +1,38 @@
+@import '../../App.scss';
+
+/***** DETAIL PAGE STYLE *****/
+.detail-page {
+  padding: 0 1rem;
+
+  // BOX
+  &__box {
+    @include wrapper(1000px, 120px auto 60px);
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.9);
+    gap: 2rem;
+    color: set-text-color(#fff);
+
+    // MEDIA QUERY
+    @include laptop {
+      flex-direction: row;
+      gap: 4rem;
+    }
+    span {
+      margin-right: 0.5rem;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+
+  &__heading {
+    p {
+      margin-top: 1rem;
+      padding: 0.5rem;
+      border: solid 1px black;
+      width: 80px;
+      text-align: center;
+    }
+  }
+}

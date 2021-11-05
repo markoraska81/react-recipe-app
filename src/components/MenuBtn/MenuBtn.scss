@@ -1,0 +1,26 @@
+@import '../../App.scss';
+
+/***** MENU BTN STYLE *****/
+.menu-btn {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  z-index: 99999999;
+
+  // MEDIA QUERY
+  @include laptop {
+    display: none;
+  }
+
+  &__line {
+    width: 30px;
+    height: 5px;
+    margin: 0 0 5px 0;
+    background-color: #606060;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

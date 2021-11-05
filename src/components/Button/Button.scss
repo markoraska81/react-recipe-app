@@ -1,0 +1,47 @@
+@import '../../App.scss';
+
+/***** BUTTON STYLE *****/
+// BTN SEARCH
+.btn-search {
+  padding: 10px 25px;
+  background-color: $red;
+  border: none;
+  text-transform: uppercase;
+  font-size: clamp(1rem, 1.5vw, 3rem);
+  color: set-text-color(#000);
+  cursor: pointer;
+  transition: $ease-in-out;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+}
+
+// BTN RECIPE
+.btn-recipe {
+  display: inline-block;
+  width: auto;
+  padding: 0.4rem 0.8rem;
+  margin-top: 1rem;
+  margin-left: auto;
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  background-color: $red;
+  color: set-text-color($dark);
+  outline: none;
+  cursor: pointer;
+  letter-spacing: 2px;
+  transition: all 250ms ease-in-out;
+
+  &:hover,
+  &:focus {
+    background-color: $dark-red;
+  }
+}

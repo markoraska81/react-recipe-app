@@ -1,0 +1,13 @@
+@import '../../App.scss';
+
+/***** FOOTER STYLE *****/
+// FOOTER
+.footer {
+  padding: 0.8rem;
+  background-color: black;
+  color: set-text-color(#000);
+
+  .copyright {
+    @include wrapper(90%, 0 auto);
+  }
+}
